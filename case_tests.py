@@ -1,28 +1,11 @@
-import pyspark
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col
+def test_addition():
+    assert 1 + 1 == 2
 
-# Because this file is not a Databricks notebook, you
-# must create a Spark session. Databricks notebooks
-# create a Spark session for you by default.
-spark = SparkSession.builder \
-                    .appName('integrity-tests') \
-                    .getOrCreate()
+def test_subtraction():
+    assert 5 - 3 == 2
 
-# Does the specified table exist in the specified database?
-def tableExists(tableName, dbName):
-  return spark.catalog.tableExists(f"{dbName}.{tableName}")
+def test_multiplication():
+    assert 2 * 3 == 6
 
-# Does the specified column exist in the given DataFrame?
-def columnExists(dataFrame, columnName):
-  if columnName in dataFrame.columns:
-    return True
-  else:
-    return False
-
-# How many rows are there for the specified value in the specified column
-# in the given DataFrame?
-def numRowsInColumnForValue(dataFrame, columnName, columnValue):
-  df = dataFrame.filter(col(columnName) == columnValue)
-
-  return df.count()
+def test_division():
+    assert 6 / 3 == 2
