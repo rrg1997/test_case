@@ -9,5 +9,3 @@ def test_multiplication():
 
 def test_division():
     assert 6 / 3 == 2
-
-print(test_multiplication)
