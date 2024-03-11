@@ -5,7 +5,7 @@ on:
 
 env:
   # Replace this value with your workspace instance name.
-  DATABRICKS_HOST: https://test_case.cloud.databricks.com
+  DATABRICKS_HOST: https://adb-8344460307343477.17.azuredatabricks.net/browse/folders/1196605424241925?o=8344460307343477
 
 jobs:
   unit-test-notebook:
