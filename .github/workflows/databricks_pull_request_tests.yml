@@ -5,10 +5,10 @@ on:
 
 env:
   # Replace this value with your workspace instance name.
-  DATABRICKS_HOST: https://test_case
+  DATABRICKS_HOST: https://test_case.cloud.databricks.com
 
 jobs:
-  testing_job:
+  unit-test-notebook:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -20,7 +20,7 @@ jobs:
         with:
           databricks-token: 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
 
-          local-notebook-path: notebooks/test_run.py
+          local-notebook-path: notebooks/checkadd_test.py
 
           existing-cluster-id: 0307-114857-zts2s9r9
 
