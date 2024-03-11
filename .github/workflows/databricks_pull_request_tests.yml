@@ -18,7 +18,7 @@ jobs:
       - name: Run test notebook
         uses: databricks/run-notebook@main
         with:
-          databricks-token: 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
+          databricks-token: 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
 
           local-notebook-path: notebooks/checkadd_test.py
 

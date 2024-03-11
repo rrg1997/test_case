@@ -1,3 +1,11 @@
+# This is sample file
+import pytest
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+from pyspark.sql import SQLContext
+
+spark = SparkSession.builder.appName("test-case").getOrCreate()
+
 def test_addition():
     assert 1 + 1 == 2
 

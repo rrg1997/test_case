@@ -41,7 +41,3 @@ pytest.main([".", "-v", "-p", "no:cacheprovider"])
 
 
 
-
-# COMMAND ----------
-
-displayHTML(cleaned_output)
