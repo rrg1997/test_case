@@ -20,7 +20,7 @@ jobs:
         with:
           databricks-token: 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
 
-          local-notebook-path: notebooks/run_unit_tests.py
+          local-notebook-path: notebooks/test_run.py
 
           existing-cluster-id: 0307-114857-zts2s9r9
 
