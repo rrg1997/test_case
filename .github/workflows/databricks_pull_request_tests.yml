@@ -8,7 +8,7 @@ env:
   DATABRICKS_HOST: https://test_case
 
 jobs:
-  unit-test-notebook:
+  testing_job:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
